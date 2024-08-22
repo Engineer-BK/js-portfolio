@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Websites</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/41697baba2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img
+            src="personal-portfolio-imges/logo.png"
+            alt="logo"
+            class="logo"
+          />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Front-End Web Developer</p>
+          <h1>
+            Hi, I'm <span>Basir</span><br />
+            from Karimganj
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!-- -------------about---------------- -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="personal-portfolio-imges/user.png" alt="user" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              As a passionate fresher in Front-End Development, I am proficient
+              in HTML, CSS, JavaScript, Bootstrap, and Tailwind CSS, along with
+              modern JS frameworks like React and Angular. Eager to apply my
+              skills in creating responsive and user-friendly web interfaces,
+              and excited to learn and grow in the field. Additionally, I have
+              hands-on experience in Machine Learning, having completed my
+              B.Tech project on Stock Market Prediction using advanced
+              techniques such as Recurrent Neural Networks (RNN) and Long Short
+              Term Memory (LSTM) cells. I utilized python libraries like NumPy,
+              Scikit-Learn/Sk-Learn, Pandas, and Matplotlib to analyze data and
+              develop predictive models. Excited to leverage this
+              interdisciplinary skill set to create innovative web solutions and
+              contribute to dynamic projects.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>HTML</span><br />Tags, Attributes, Semantic Elements,
+                  Document Structure , DOCTYPE etc.
+                </li>
+                <li>
+                  <span>CSS</span><br />Selectors, Cascade, Specificity, Box
+                  model, Flexbox/Grid, Media queries etc.
+                </li>
+                <li>
+                  <span>JavaScript</span><br />Scope, IIFE, Hoisting, Closures,
+                  Callbacks, Promises, Async & Await etc.
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>Designing Web/App Interfaces</span><br />Fresher</li>
+                <li><span>Web Development</span><br />Fresher</li>
+                <li><span>App Development</span><br />Fresher</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>College</span><br />
+                  B.Tech in Computer Science & Engineering. <br />School of
+                  Engineering and Technology, NU, Dimapur. <br />
+                  Batch - 2023
+                </li>
+                <li>
+                  <span>College</span><br />Ajmal College of Arts Commerce and
+                  Science, Hojai <br />
+                  HS, Science (11&12) <br />Jun 2016 - Mar 2018
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- -------------services---------------- -->
+
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+              In web design, I wield creativity and technical prowess to craft
+              immersive digital experiences. Every pixel, color, and line of
+              code reflects my dedication to seamless functionality and stunning
+              aesthetics. User-centric design principles drive me to create
+              intuitive interfaces that captivate and delight users, leaving a
+              lasting impression.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop"></i>
+            <h2>UI/UX Design</h2>
+            <p>
+              In UI/UX design, I fuse creativity with user-centric principles to
+              sculpt seamless digital journeys. Through meticulous research and
+              empathy, I craft intuitive interfaces that anticipate user needs.
+              Every pixel, interaction, and animation is purposefully
+              orchestrated to elevate user experience, fostering engagement and
+              leaving a lasting impression on every visitor.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>App Design</h2>
+            <p>
+              As an app designer, I sculpt digital experiences that seamlessly
+              integrate form and function. Through intuitive user interfaces and
+              empathetic user experiences, I create engaging journeys that
+              captivate and delight users. Every element, from layout to
+              interaction, is meticulously crafted to enhance usability and
+              leave a lasting impact on users.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- --------------------portfolio------------------ -->
+
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="personal-portfolio-imges/work-1.png" alt="work-1" />
+            <div class="layer">
+              <h3>Social Media App</h3>
+              <p>
+                The app connect you to the talented people around the world.
+                Download it from play store.
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="personal-portfolio-imges/work-2.png" alt="work-2" />
+            <div class="layer">
+              <h3>Music App</h3>
+              <p>
+                The app connect you to the talented people around the world.
+                Download it from play store.
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="personal-portfolio-imges/work-3.png" alt="work-3" />
+            <div class="layer">
+              <h3>Online Shopping App</h3>
+              <p>
+                The app connect you to the talented people around the world.
+                Download it from play store.
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+
+    <!-- ----------------contact----------------- -->
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i> bachirak47@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i> 7638089476</p>
+            <div class="social-icons">
+              <a target="_blank" href="https://www.facebook.com/bachirak123/"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a target="_blank" href="https://twitter.com/bachirkhan/"
+                ><i class="fa-brands fa-twitter-square"></i
+              ></a>
+              <a target="_blank" href="https://www.instagram.com/call.me.bk/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a target="_blank" href="https://www.linkedin.com/in/bachirkhan/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </div>
+            <a href="personal-portfolio-img/my-cv.pdf" download class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message!"
+              ></textarea>
+              <button type="Submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Copyright © Basir. Made with <i class="fa-brands fa-html5"></i> HTML
+          <i class="fa-brands fa-css3-alt"></i> CSS
+          <i class="fa-brands fa-js"></i> Javascript
+        </p>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+      var sidemeu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemeu.style.right = "0";
+      }
+      function closemenu() {
+        sidemeu.style.right = "-200px";
+      }
+    </script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbxRkKZPNbMJCMVbKiowxavL-v3cuV8v00DH5BpgZb-5BaqH4Wzqjrrmzu3ieqp9ci3PhA/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully.";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
